@@ -6,6 +6,12 @@ function roboger(numInput) {
 	if (isNaN(robogerInput) || typeof robogerInput != 'number' || robogerInput < 0) {
 		return robogerError
 	} else {
-		return robogerInput
+		const robogerOutput = []
+		for (i = 0; i <= robogerInput; i++) {
+			robogerOutput.push(i);
+			console.log(i);
+		}
+		return robogerOutput;
+
 	}
 }

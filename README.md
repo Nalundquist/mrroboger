@@ -23,3 +23,9 @@ code:
 const number = "6";
 roboger(number);
 Expected output: [0, 1, 2, 3, 4, 5, 6]
+
+test: function replaces numbers in the returned array that are one or contain the digit 1 with "Beep!"
+code:
+const number = "12";
+roboger(number);
+Expected output: [0, "Beep!", 2, 3, 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Beep!"]
