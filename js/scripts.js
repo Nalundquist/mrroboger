@@ -7,7 +7,6 @@ function roboger(numInput) {
 	let robogerResult = "";
 	const robogerOutput = []
 	if (isNaN(robogerInput) || typeof robogerInput != 'number' || robogerInput < 0) {
-		console.log("Inside error conditional")
 		robogerResult = robogerError;
 		return robogerResult
 	} else {
@@ -21,7 +20,6 @@ function roboger(numInput) {
 	})
 	for (i = 0; i < robogerString.length; i++){
 		const robogerIndex = robogerString[i];
-		console.log(robogerIndex)
 		if (robogerIndex === "143"){
 			robogerString[i] = '"I love you."'
 		} else if (robogerIndex.includes(3)){
@@ -36,12 +34,10 @@ function roboger(numInput) {
 	}
 	for (i = 1; i < robogerString.length; i++) {
 		const robogerIndex = robogerString[i];
-		console.log("Inside concat conditional");
 		const preSpace = " ";
 		robogerString[i] = preSpace.concat(robogerIndex);
 	}
 	if (robogerResult != robogerError){
-		console.log("Inside valid result conditional")
 		robogerResult = robogerString.toString("");
 		
 	}
@@ -65,7 +61,6 @@ function robogerSubmit(event){
 	resultDisplay.innerText = null;
 	resultDisplay.append(p);
 	resultDisplay.setAttribute("class", "robogerDisplay");
-	console.log(robogerResult);
 }
 
 window.addEventListener("load", function(){
