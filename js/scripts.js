@@ -22,7 +22,9 @@ function roboger(numInput) {
 	for (i = 0; i < robogerString.length; i++){
 		const robogerIndex = robogerString[i];
 		console.log(robogerIndex)
-		if (robogerIndex.includes(3)){
+		if (robogerIndex === "143"){
+			robogerString[i] = '"I love you."'
+		} else if (robogerIndex.includes(3)){
 			robogerString[i] = '"Won\'t you be my neighbor?"';
 		} else if (robogerIndex.includes(2)){
 			robogerString[i] = '"Boop!"';
@@ -48,3 +50,23 @@ function roboger(numInput) {
 
 // UI Logic
 
+function robogerSubmit(event){
+	event.preventDefault();
+
+	const robogerInput = document.getElementById("numberInput").value;
+	const robogerResult = roboger(robogerInput);
+	const resultDisplay = document.querySelector("div#result");
+
+	resultDisplay.classList.add("hidden");
+
+	const p = document.createAttribute("p");
+	p.append(resultDisplay);
+	robogerResult.append(p);
+	resultDisplay.setAttribute("class", "robogerDisplay");
+	console.log(robogerResult)
+}
+
+window.addEventListener("load", function(){
+	let form = document.getElementById("robogerForm");
+	form.addEventListener("submit", robogerSubmit)
+})
