@@ -61,6 +61,11 @@ function robogerSubmit(event){
 	resultDisplay.innerText = null;
 	resultDisplay.append(p);
 	resultDisplay.setAttribute("class", "robogerDisplay");
+	window.scrollTo({
+		top: 500,	 
+		left: 20,
+		behavior: "smooth"
+	});
 }
 
 window.addEventListener("load", function(){
