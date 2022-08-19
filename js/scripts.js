@@ -4,15 +4,18 @@
 function roboger(numInput) {
 	const robogerInput = parseInt(numInput);
 	const robogerError = "It is not a wonderful day in the neighborhood.";
+	const robogerError2 = "That number...it is horrifying to me.  Please choose one smaller.  Under 5000, perhaps."
 	let robogerResult = "";
 	const robogerOutput = []
 	if (isNaN(robogerInput) || typeof robogerInput != 'number' || robogerInput < 0) {
 		robogerResult = robogerError;
-		return robogerResult
+		return robogerResult;
+	} else  if (robogerInput >= 5000){
+		robogerResult = robogerError2;
+		return robogerResult;
 	} else {
 		for (i = 0; i <= robogerInput; i++) {
 			robogerOutput.push(i);
-			console.log(i);
 		}
 	}
 	const robogerString = robogerOutput.map(function(num) {
