@@ -1,4 +1,58 @@
+## Mr. Roboger's Neighborhood
+
+### Created by Noah Lundquist in August of 2022
+
+## Links
+
+* [Repository](https://github.com/nalundquist/mrroboger)
+* [Webpage](https://nalundquist.github.io/mrroboger)
+
+## Description
+
+A webpage created as a part of ongoing Epicodus course, talk to a computer!  Kind of.  Any given number input into this form will then give a result that counts to said number while replacing certain numbers/numbers containing said numbers with different words and phrases.  Fun fact: I did not know until doing a little research for this project that Mr. Rogers loved the number "143" as it alluded to the number of letters in each word of the phrase "I Love You", which I find heartwarming.  
+
+## Features
+
+* Inputted number is placed through a series of loops that replace given integers with words/phrases
+* Talk with a (not) sentient machine who loves a certain television show of yore
+* Results reset upon resubmission of input
+* Automatically scrolls down to results
+
+## Technologies Used
+
+* Built in VS Code (v.1.70.1) using the following languages:
+	* HTML
+	* CSS
+	* Javascript
+
+* Includes the ["Play" font](https://fonts.google.com/specimen/Play) sourced through [Google Fonts](https://fonts.google.com) and created by Jonas Hecksher
+
+* Tested in the following browsers:
+	* Google Chrome (v.104.0)
+	* Firefox (v.103.0.2)
+	* Microsoft Edge (v.104.0)
+
+## Installation
+
+* Download [Git Bash](https://git-scm.com/downloads)
+* Input the following into Git Bash to clone this repository onto your computer:
+
+		>git clone https://github.com/nalundquist/mrroboger
+
+* Enter the cloned project folder "mrroboger" and open "index.html" in browser.
+
+## Known Bugs
+
+* None at this point
+
+## License
+
+Licensed under [GNU GPL 3.0](https://www.gnu.org/licenses/gpl-3.0.en.html)
+
+## TDD Log
+
 describe: roboger();
+
 
 test: function should take a number input and output that number
 code: 
