@@ -47,4 +47,8 @@ const number = "13";
 roboger(number);
 Expected output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Boop!", "Won't you be my neighbor?"]
 
-
+test: function outputs final result/error as string
+code: 
+const number = "7";
+roboger(number);
+Expected output: "0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7"
