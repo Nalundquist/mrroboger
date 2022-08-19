@@ -17,3 +17,9 @@ code:
 const number = "-99";
 roboger(number);
 Expected output: "It is not a wonderful day in the neighborhood"
+
+test: function returns array that increments to inputted number from 0
+code:
+const number = "6";
+roboger(number);
+Expected output: [0, 1, 2, 3, 4, 5, 6]
