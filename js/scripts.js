@@ -14,12 +14,13 @@ function roboger(numInput) {
 		const robogerString = robogerOutput.map(function(num) {
 			return num.toString();
 		})
-		// for (i = 0; i <= robogerOutput.length; i++){
-		// 	const robogerIndex = robogerOutput[i].toString();
-		// 	if (robogerIndex.includes(1)){
-		// 		robogerOutput[i] = "Beep!"
-		// 	}
-		// }
+		for (i = 0; i < robogerString.length; i++){
+			const robogerIndex = robogerString[i];
+			console.log(robogerIndex)
+			// if (robogerIndex.includes(1)){
+			// 	robogerString[i] = "Beep!"
+			// }
+		}
 		return robogerString;
 	}
 }
