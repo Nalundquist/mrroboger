@@ -11,3 +11,9 @@ code:
 const number = "string";
 roboger(number);
 Expected output: "It is not a wonderful day in the neighborhood"
+
+test: function does not take negative numbers
+code:
+const number = "-99";
+roboger(number);
+Expected output: "It is not a wonderful day in the neighborhood"
