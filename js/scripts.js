@@ -17,9 +17,9 @@ function roboger(numInput) {
 		for (i = 0; i < robogerString.length; i++){
 			const robogerIndex = robogerString[i];
 			console.log(robogerIndex)
-			// if (robogerIndex.includes(1)){
-			// 	robogerString[i] = "Beep!"
-			// }
+			if (robogerIndex.includes(1)){
+				robogerString[i] = "Beep!"
+			}
 		}
 		return robogerString;
 	}
