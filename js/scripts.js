@@ -11,6 +11,15 @@ function roboger(numInput) {
 			robogerOutput.push(i);
 			console.log(i);
 		}
+		robogerOutput.map(function(num) {
+			return toString(num)
+		})
+		for (i = 0; i <= robogerOutput.length; i++){
+			const robogerIndex = robogerOutput[i].toString();
+			if (robogerIndex.includes(1)){
+				robogerOutput[i] = "Beep!"
+			}
+		}
 		return robogerOutput;
 
 	}
