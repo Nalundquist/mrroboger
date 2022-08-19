@@ -10,7 +10,7 @@ function roboger(numInput) {
 	if (isNaN(robogerInput) || typeof robogerInput != 'number' || robogerInput < 0) {
 		robogerResult = robogerError;
 		return robogerResult;
-	} else  if (robogerInput >= 5000){
+	} else if (robogerInput >= 5000){
 		robogerResult = robogerError2;
 		return robogerResult;
 	} else {
@@ -40,9 +40,8 @@ function roboger(numInput) {
 		const preSpace = " ";
 		robogerString[i] = preSpace.concat(robogerIndex);
 	}
-	if (robogerResult != robogerError){
+	if (robogerResult != robogerError && robogerResult != robogerError2){
 		robogerResult = robogerString.toString("");
-		
 	}
 	return robogerResult;
 }
