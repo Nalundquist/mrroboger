@@ -40,3 +40,11 @@ code:
 const number = "12";
 roboger(number);
 Expected output: [0, "Beep!", "Boop!", 3, 4, 5, 6, 7, 8, 9, "Beep!", "Beep!", "Beep!"]
+
+test: function replaces numbers in the returned array that are one or contain the digit 3 with "Won't you be my neighbor?"
+code:
+const number = "13";
+roboger(number);
+Expected output: [0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, "Beep!", "Boop!", "Won't you be my neighbor?"]
+
+
