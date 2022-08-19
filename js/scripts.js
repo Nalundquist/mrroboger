@@ -59,14 +59,16 @@ function robogerSubmit(event){
 
 	resultDisplay.classList.add("hidden");
 
-	const p = document.createAttribute("p");
-	p.append(resultDisplay);
-	robogerResult.append(p);
+	const p = document.createElement("p");
+	p.innerText = null
+	p.append(robogerResult);
+	resultDisplay.innerText = null;
+	resultDisplay.append(p);
 	resultDisplay.setAttribute("class", "robogerDisplay");
-	console.log(robogerResult)
+	console.log(robogerResult);
 }
 
 window.addEventListener("load", function(){
 	let form = document.getElementById("robogerForm");
-	form.addEventListener("submit", robogerSubmit)
+	form.addEventListener("submit", robogerSubmit);
 })
