@@ -16,21 +16,21 @@ function roboger(numInput) {
 	} else {
 		for (i = 0; i <= robogerInput; i++) {
 			robogerOutput.push(i);
+			const robogerString = robogerOutput.map(function(num) {
+				return num.toString();
+			})
 		}
 	}
-	const robogerString = robogerOutput.map(function(num) {
-		return num.toString();
-	})
 	for (i = 0; i < robogerString.length; i++){
 		const robogerIndex = robogerString[i];
-		if (robogerIndex === "143"){
-			robogerString[i] = '"I love you."'
+		if (robogerIndex === " 143"){
+			robogerString[i] = ' "I love you."'
 		} else if (robogerIndex.includes(3)){
-			robogerString[i] = '"Won\'t you be my neighbor?"';
+			robogerString[i] = ' "Won\'t you be my neighbor?"';
 		} else if (robogerIndex.includes(2)){
-			robogerString[i] = '"Boop!"';
+			robogerString[i] = ' "Boop!"';
 		} else if (robogerIndex.includes(1)){
-			robogerString[i] = '"Beep!"';
+			robogerString[i] = ' "Beep!"';
 		} else {
 
 		}
