@@ -7,7 +7,7 @@ function roboger(numInput) {
 	const robogerError2 = "That number...It is horrifying to me.  Please choose one smaller.  Under 5000, perhaps."
 	let robogerResult = "";
 	let robogerOutput = []
-	if (typeof robogerInput !== 'number' || robogerInput < 0) {
+	if (isNaN(robogerInput) || typeof robogerInput !== 'number' || robogerInput < 0) {
 		robogerResult = robogerError;
 		return robogerResult;
 	} else if (robogerInput >= 5000){
